@@ -147,8 +147,6 @@ body{font-family:system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;background
 .star-rating{display:flex;gap:8px;margin-top:8px}
 .star{font-size:24px;cursor:pointer;color:var(--border);transition:color .2s}
 .star:hover,.star.active{color:var(--warning)}
-
-/* === АКОРДЕОН (універсальний) === */
 .accordion-item{background:#fff;border:2px solid var(--border);border-radius:12px;margin:12px 0;transition:border-color .3s}
 .accordion-item:hover{border-color:var(--accent)}
 .accordion-item.active{border-color:var(--accent)}
@@ -160,8 +158,6 @@ body{font-family:system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;background
 .accordion-content{max-height:0;overflow:hidden;transition:max-height .4s ease-out}
 .accordion-item.active .accordion-content{max-height:5000px;overflow:visible}
 .accordion-body{padding:16px 20px;border-top:2px solid var(--border);background:#fff;border-radius:0 0 10px 10px}
-
-/* === ІНТЕРАКТИВНА ІЛЮСТРАЦІЯ (ВИДИ РЕСУРСІВ) === */
 .resource-visual{background:linear-gradient(135deg,#f0f9ff,#e0f2fe);border:2px solid #7dd3fc;border-radius:16px;padding:24px;margin:20px 0;text-align:center}
 .resource-visual h4{color:#0369a1;font-size:17px;margin-bottom:16px}
 .resource-grid-visual{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:16px 0}
@@ -181,8 +177,6 @@ body{font-family:system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;background
 .resource-details ul li{padding:6px 0 6px 24px;position:relative;font-size:14px;border-bottom:1px solid var(--border)}
 .resource-details ul li:last-child{border-bottom:none}
 .resource-details ul li::before{content:'•';position:absolute;left:8px;color:var(--accent);font-weight:700;font-size:18px}
-
-/* === АЛГОРИТМ — РОЗКРИВНІ КАРТКИ === */
 .algo-expand-list{display:flex;flex-direction:column;gap:10px;margin:20px 0}
 .algo-expand{background:#fff;border:2px solid var(--border);border-radius:14px;overflow:hidden;transition:all .3s;box-shadow:0 2px 8px rgba(0,0,0,.04)}
 .algo-expand:hover{border-color:var(--accent);box-shadow:0 4px 12px rgba(37,99,235,.1)}
@@ -208,8 +202,6 @@ body{font-family:system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;background
 .algo-expand-questions li{padding:6px 0 6px 22px;position:relative;font-size:13px;color:var(--text);border-bottom:1px dashed var(--border)}
 .algo-expand-questions li:last-child{border-bottom:none}
 .algo-expand-questions li::before{content:'❓';position:absolute;left:0;top:6px;font-size:12px}
-
-/* === СИМУЛЯТОР БЮДЖЕТУ === */
 .budget-sim{background:linear-gradient(135deg,#fef3c7,#fde68a);border:2px solid #fbbf24;border-radius:14px;padding:20px;margin:16px 0}
 .budget-sim h4{color:#78350f;font-size:17px;margin-bottom:12px;display:flex;align-items:center;gap:8px}
 .budget-header{display:flex;justify-content:space-between;align-items:center;background:#fff;padding:12px 16px;border-radius:10px;margin-bottom:16px;flex-wrap:wrap;gap:8px}
@@ -225,8 +217,6 @@ body{font-family:system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;background
 .budget-item-price{font-weight:700;color:var(--accent);font-size:15px}
 .budget-item-type{font-size:11px;color:var(--text-muted);font-style:italic}
 .budget-feedback{margin-top:16px;padding:12px;border-radius:10px;background:#fff;border:2px solid var(--border);font-size:14px;min-height:60px}
-
-/* === СПОСОБИ ЗАДОВОЛЕННЯ ПОТРЕБ === */
 .needs-methods{background:linear-gradient(135deg,#fce7f3,#fbcfe8);border:2px solid #f9a8d4;border-radius:14px;padding:20px;margin:20px 0}
 .needs-methods h4{color:#be185d;font-size:17px;margin-bottom:16px;display:flex;align-items:center;gap:8px}
 .methods-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin-top:12px}
@@ -235,8 +225,6 @@ body{font-family:system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;background
 .method-card h5{color:var(--primary);font-size:14px;margin-bottom:6px;display:flex;align-items:center;gap:6px}
 .method-card p{font-size:13px;color:var(--text);line-height:1.5}
 .method-card .method-example{margin-top:8px;padding:8px;background:var(--bg);border-radius:6px;font-size:12px;color:var(--text-muted);font-style:italic}
-
-/* === TAP-TO-TAP DnD === */
 .dnd-container{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin:16px 0}
 .dnd-bank,.dnd-target{background:#fff;border:2px solid var(--border);border-radius:12px;padding:16px}
 .dnd-bank h4,.dnd-target h4{margin-bottom:12px;font-size:15px;color:var(--primary)}
@@ -246,8 +234,6 @@ body{font-family:system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;background
 .dnd-card.placed{opacity:.4;pointer-events:none}
 .dnd-card-icon{font-size:18px;flex-shrink:0}
 .dnd-card-text{flex:1;font-size:14px}
-
-/* === СЛОТИ ДЛЯ СОРТУВАННЯ === */
 .sort-container{background:linear-gradient(135deg,#eff6ff,#dbeafe);border:2px solid #93c5fd;border-radius:14px;padding:20px;margin:16px 0}
 .sort-bank{min-height:80px;padding:12px;background:#fff;border:2px dashed var(--border);border-radius:10px;margin-bottom:20px}
 .sort-bank-title{font-weight:600;color:var(--primary);margin-bottom:12px;display:flex;align-items:center;gap:8px}
@@ -265,13 +251,9 @@ body{font-family:system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;background
 .sort-slot-content{flex:1;font-size:14px;font-weight:500;color:var(--text)}
 .sort-slot-remove{background:var(--danger);color:#fff;border:none;border-radius:50%;width:28px;height:28px;display:flex;align-items:center;justify-content:center;cursor:pointer;font-size:14px;font-weight:700;flex-shrink:0}
 .sort-slot-remove:hover{background:#991b1b}
-
-/* === TAP ІНСТРУКЦІЯ === */
 .tap-instruction{background:linear-gradient(135deg,#fef3c7,#fde68a);border:2px solid #fbbf24;border-radius:10px;padding:12px 16px;margin-bottom:16px;display:flex;align-items:center;gap:12px;font-size:14px;color:#78350f}
 .tap-instruction-icon{font-size:24px;flex-shrink:0}
 .tap-instruction strong{color:#78350f}
-
-/* === КЛАСИФІКАЦІЯ === */
 .classify-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:16px 0}
 .classify-col{background:#fff;border:2px solid var(--border);border-radius:12px;padding:16px;min-height:200px}
 .classify-col h4{margin-bottom:12px;font-size:15px;padding:10px;border-radius:8px;text-align:center}
@@ -283,10 +265,8 @@ body{font-family:system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;background
 .classify-item.selected{border-color:var(--warning);background:#fef3c7;box-shadow:0 0 0 3px rgba(245,158,11,.3)}
 .classify-item.correct{border-color:var(--success);background:#dcfce7}
 .classify-item.incorrect{border-color:var(--danger);background:#fee2e2}
-
 .dnd-reset-btn{margin-top:12px;padding:8px 16px;background:var(--bg);border:1px solid var(--border);border-radius:8px;cursor:pointer;font-size:14px;font-weight:600;color:var(--text);transition:all .2s}
 .dnd-reset-btn:hover{background:#e2e8f0}
-
 #matchingContainer{display:flex;flex-direction:column;gap:12px;margin:16px 0}
 .matching-row{display:grid;grid-template-columns:1fr 40px 1.5fr;gap:12px;align-items:center}
 .matching-left{background:var(--bg);padding:12px;border-radius:8px;font-weight:600;font-size:15px;border:2px solid var(--border)}
@@ -305,7 +285,6 @@ body{font-family:system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;background
 .tf-card.true-card .tf-card-title{color:#166534}
 .tf-card.false-card .tf-card-title{color:#991b1b}
 .tf-card-desc{font-size:13px;color:var(--text-muted)}
-
 @media(max-width:968px){
 .hero-unified{grid-template-columns:1fr}
 .hero-illustration{border-bottom:2px dashed var(--accent);min-height:300px}
@@ -382,7 +361,6 @@ body{font-family:system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;background
 </div>
 </header>
 
-<!-- ГОЛОВНА -->
 <main class="container hidden" id="mainPage">
 <div class="hero-unified">
 <div class="hero-illustration">
@@ -418,7 +396,6 @@ body{font-family:system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;background
 <div class="tip-card">💡 <strong>Пам'ятай:</strong> Економіка — це не лише гроші. Це наука про вибір, коли ресурсів бракує на всі бажання.</div>
 </main>
 
-<!-- КРОК 1 -->
 <main class="container hidden" id="step1Page">
 <div class="step-header"><h2 class="step-title">🎯 Крок 1. Стартове завдання</h2></div>
 <section class="card">
@@ -433,15 +410,15 @@ body{font-family:system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;background
 <p style="margin:12px 0;color:var(--text-muted);font-style:italic">📌 <strong>Обери 5 речей, які візьмеш із собою:</strong></p>
 <div class="task-options" id="s1t1">
 <div class="option" data-correct="true" onclick="tog(this)" tabindex="0"><div class="option-checkbox"></div><div class="option-text"><div class="option-label">💧 Вода</div></div></div>
-<div class="option" data-correct="false" onclick="tog(this)" tabindex="0"><div class="option-checkbox"></div><div class="option-text"><div class="option-label">🎸 Гітара</div></div></div>
 <div class="option" data-correct="true" onclick="tog(this)" tabindex="0"><div class="option-checkbox"></div><div class="option-text"><div class="option-label">🥪 Перекус</div></div></div>
-<div class="option" data-correct="false" onclick="tog(this)" tabindex="0"><div class="option-checkbox"></div><div class="option-text"><div class="option-label">🎲 Настільна гра</div></div></div>
 <div class="option" data-correct="true" onclick="tog(this)" tabindex="0"><div class="option-checkbox"></div><div class="option-text"><div class="option-label">🧥 Дощовик</div></div></div>
-<div class="option" data-correct="false" onclick="tog(this)" tabindex="0"><div class="option-checkbox"></div><div class="option-text"><div class="option-label">👟 Запасне взуття</div></div></div>
 <div class="option" data-correct="true" onclick="tog(this)" tabindex="0"><div class="option-checkbox"></div><div class="option-text"><div class="option-label">🩹 Аптечка</div></div></div>
 <div class="option" data-correct="true" onclick="tog(this)" tabindex="0"><div class="option-checkbox"></div><div class="option-text"><div class="option-label">🔋 Павербанк</div></div></div>
+<div class="option" data-correct="false" onclick="tog(this)" tabindex="0"><div class="option-checkbox"></div><div class="option-text"><div class="option-label">🎸 Гітара</div></div></div>
 <div class="option" data-correct="false" onclick="tog(this)" tabindex="0"><div class="option-checkbox"></div><div class="option-text"><div class="option-label">📚 Книжка</div></div></div>
 <div class="option" data-correct="false" onclick="tog(this)" tabindex="0"><div class="option-checkbox"></div><div class="option-text"><div class="option-label">📷 Фотоапарат</div></div></div>
+<div class="option" data-correct="false" onclick="tog(this)" tabindex="0"><div class="option-checkbox"></div><div class="option-text"><div class="option-label">👟 Запасне взуття</div></div></div>
+<div class="option" data-correct="false" onclick="tog(this)" tabindex="0"><div class="option-checkbox"></div><div class="option-text"><div class="option-label">🎲 Настільна гра</div></div></div>
 </div>
 <div id="s1t1f" class="feedback" style="display:none"></div>
 <div class="navigation">
@@ -452,7 +429,6 @@ body{font-family:system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;background
 </section>
 </main>
 
-<!-- КРОК 2 -->
 <main class="container hidden" id="step2Page">
 <div class="step-header"><div class="step-header-top"><h2 class="step-title">🧩 Крок 2. Потреби та ресурси</h2><span class="step-badge">2 завдання</span></div></div>
 <section class="card" id="s2Theory">
@@ -462,7 +438,7 @@ body{font-family:system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;background
 <p>Щодня людина має різні потреби: у їжі, житлі, безпеці, навчанні, спілкуванні та відпочинку. Для їх задоволення потрібні <strong>ресурси</strong> — усе, що можна використати для досягнення певної мети.</p>
 </div>
 <div class="resource-visual">
-<h4>🎨 Мал. 19. Види ресурсів (натисни на коло, щоб дізнатися більше)</h4>
+<h4>🎨 Види ресурсів (натисни на коло, щоб дізнатися більше)</h4>
 <div class="resource-grid-visual">
 <div class="resource-circle rc-natural" onclick="showResource('natural')" tabindex="0" role="button" aria-label="Природні ресурси"><div class="rc-icon">🌿</div><div class="rc-label">Природні</div></div>
 <div class="resource-circle rc-material" onclick="showResource('material')" tabindex="0" role="button" aria-label="Матеріальні ресурси"><div class="rc-icon">🏭</div><div class="rc-label">Матеріальні</div></div>
@@ -502,11 +478,12 @@ body{font-family:system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;background
 <div class="navigation"><button class="btn btn-secondary" onclick="showS2('s2Theory')">← Назад</button><button class="btn btn-primary" onclick="chkMatching('s2t1',{m21:'a',m22:'b',m23:'c',m24:'d',m25:'a'},'step2_task1')">✓ Перевірити</button><button class="btn btn-success" onclick="showS2('s2t2')">Далі →</button></div>
 </section>
 
+<!-- === ВИПРАВЛЕНО: picnicData — "Яблука та бутерброди" → nat, "Сонячне світло" → nat === -->
 <section class="card hidden" id="s2t2">
 <h2>🎒 Завдання 2. Ресурси для шкільного пікніка</h2>
 <div class="tap-instruction">
 <div class="tap-instruction-icon">👆</div>
-<div><strong>Як виконувати:</strong> Натисни на картку з ресурсом → вона підсвітиться жовтим. Потім натисни на потрібну категорію нижче. Так само можеш перетягувати картки мишею на комп'ютері.</div>
+<div><strong>Як виконувати:</strong> Натисни на картку з ресурсом → вона підсвітиться жовтим. Потім натисни на потрібну категорію нижче, щоб розмістити ресурс.</div>
 </div>
 <div class="dnd-container">
 <div class="dnd-bank">
@@ -518,19 +495,19 @@ body{font-family:system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;background
 <h4>✅ Розподіл (натисни на категорію)</h4>
 <div style="margin-bottom:12px">
 <div style="background:linear-gradient(135deg,#dcfce7,#bbf7d0);padding:10px;border-radius:8px;font-weight:600;color:#166534;margin-bottom:8px">🌿 Природні</div>
-<div id="natTarget" class="classify-col need" data-category="nat" style="min-height:70px;border:2px dashed var(--success);border-radius:8px;padding:8px;background:#fff"></div>
+<div id="natTarget" data-category="nat" style="min-height:70px;border:2px dashed var(--success);border-radius:8px;padding:8px;background:#fff"></div>
 </div>
 <div style="margin-bottom:12px">
 <div style="background:linear-gradient(135deg,#dbeafe,#bfdbfe);padding:10px;border-radius:8px;font-weight:600;color:#1e40af;margin-bottom:8px">🏭 Матеріальні</div>
-<div id="matTarget" class="classify-col want" data-category="mat" style="min-height:70px;border:2px dashed var(--accent);border-radius:8px;padding:8px;background:#fff"></div>
+<div id="matTarget" data-category="mat" style="min-height:70px;border:2px dashed var(--accent);border-radius:8px;padding:8px;background:#fff"></div>
 </div>
 <div style="margin-bottom:12px">
 <div style="background:linear-gradient(135deg,#f3e8ff,#ede9fe);padding:10px;border-radius:8px;font-weight:600;color:#6d28d9;margin-bottom:8px">👤 Людські</div>
-<div id="humTarget" class="classify-col want" data-category="hum" style="min-height:70px;border:2px dashed #a855f7;border-radius:8px;padding:8px;background:#fff"></div>
+<div id="humTarget" data-category="hum" style="min-height:70px;border:2px dashed #a855f7;border-radius:8px;padding:8px;background:#fff"></div>
 </div>
 <div>
 <div style="background:linear-gradient(135deg,#ffedd5,#fed7aa);padding:10px;border-radius:8px;font-weight:600;color:#92400e;margin-bottom:8px">💵 Фінансові</div>
-<div id="finTarget" class="classify-col want" data-category="fin" style="min-height:70px;border:2px dashed var(--warning);border-radius:8px;padding:8px;background:#fff"></div>
+<div id="finTarget" data-category="fin" style="min-height:70px;border:2px dashed var(--warning);border-radius:8px;padding:8px;background:#fff"></div>
 </div>
 </div>
 </div>
@@ -539,7 +516,6 @@ body{font-family:system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;background
 </section>
 </main>
 
-<!-- КРОК 3 -->
 <main class="container hidden" id="step3Page">
 <div class="step-header"><div class="step-header-top"><h2 class="step-title">⚖️ Крок 3. Обмеженість ресурсів і свідомий вибір</h2><span class="step-badge">3 завдання</span></div></div>
 <section class="card" id="s3Theory">
@@ -697,7 +673,6 @@ body{font-family:system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;background
 </section>
 </main>
 
-<!-- КРОК 4 — АЛГОРИТМ З РОЗКРИВНИМИ КАРТКАМИ -->
 <main class="container hidden" id="step4Page">
 <div class="step-header"><div class="step-header-top"><h2 class="step-title">🧭 Крок 4. Алгоритм свідомого вибору</h2><span class="step-badge">3 завдання</span></div></div>
 <section class="card" id="s4Theory">
@@ -706,166 +681,75 @@ body{font-family:system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;background
 <h4 style="color:#166534">🧭 Як ухвалити свідоме рішення?</h4>
 <p>Щоб обрати найдоцільніший спосіб задоволення потреби, варто діяти за <strong>алгоритмом свідомого вибору</strong>. Він допомагає не помилитися й врахувати всі важливі аспекти.</p>
 </div>
-
 <h3 style="margin:24px 0 16px;color:var(--primary)">📋 6 кроків алгоритму (натисни на крок, щоб дізнатися більше)</h3>
-
-<!-- === НОВИЙ БЛОК: РОЗКРИВНІ КАРТКИ АЛГОРИТМУ === -->
 <div class="algo-expand-list" id="algoExpandList">
 <div class="algo-expand" data-step="1">
 <div class="algo-expand-header" onclick="toggleAlgoExpand(this)" tabindex="0" role="button" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleAlgoExpand(this);}">
 <div class="algo-expand-num">1</div>
-<div class="algo-expand-title-wrap">
-<div class="algo-expand-title">УСВІДОМ ПОТРЕБУ</div>
-<div class="algo-expand-hint">Що мені зараз потрібно?</div>
-</div>
+<div class="algo-expand-title-wrap"><div class="algo-expand-title">УСВІДОМ ПОТРЕБУ</div><div class="algo-expand-hint">Що мені зараз потрібно?</div></div>
 <div class="algo-expand-arrow">▼</div>
 </div>
-<div class="algo-expand-content">
-<div class="algo-expand-body">
-<div class="algo-expand-body-inner">
+<div class="algo-expand-content"><div class="algo-expand-body"><div class="algo-expand-body-inner">
 <div class="algo-expand-text">Що мені зараз потрібно? Наскільки ця потреба важлива для мого життя і добробуту?</div>
-<div class="algo-expand-questions">
-<strong>🤔 Запитання для роздумів:</strong>
-<ul>
-<li>Чи це справді потреба, чи просто бажання?</li>
-<li>Наскільки це терміново?</li>
-</ul>
+<div class="algo-expand-questions"><strong>🤔 Запитання для роздумів:</strong><ul><li>Чи це справді потреба, чи просто бажання?</li><li>Наскільки це терміново?</li></ul></div>
+</div></div></div>
 </div>
-</div>
-</div>
-</div>
-</div>
-
 <div class="algo-expand" data-step="2">
 <div class="algo-expand-header" onclick="toggleAlgoExpand(this)" tabindex="0" role="button" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleAlgoExpand(this);}">
 <div class="algo-expand-num">2</div>
-<div class="algo-expand-title-wrap">
-<div class="algo-expand-title">ОЦІНИ РЕСУРСИ</div>
-<div class="algo-expand-hint">Які ресурси в мене є зараз?</div>
-</div>
+<div class="algo-expand-title-wrap"><div class="algo-expand-title">ОЦІНИ РЕСУРСИ</div><div class="algo-expand-hint">Які ресурси в мене є зараз?</div></div>
 <div class="algo-expand-arrow">▼</div>
 </div>
-<div class="algo-expand-content">
-<div class="algo-expand-body">
-<div class="algo-expand-body-inner">
+<div class="algo-expand-content"><div class="algo-expand-body"><div class="algo-expand-body-inner">
 <div class="algo-expand-text">Які ресурси в мене є зараз? Що я можу залучити додатково?</div>
-<div class="algo-expand-questions">
-<strong>🤔 Запитання для роздумів:</strong>
-<ul>
-<li>Скільки в мене грошей?</li>
-<li>Скільки в мене часу?</li>
-<li>Хто може допомогти?</li>
-</ul>
+<div class="algo-expand-questions"><strong>🤔 Запитання для роздумів:</strong><ul><li>Скільки в мене грошей?</li><li>Скільки в мене часу?</li><li>Хто може допомогти?</li></ul></div>
+</div></div></div>
 </div>
-</div>
-</div>
-</div>
-</div>
-
 <div class="algo-expand" data-step="3">
 <div class="algo-expand-header" onclick="toggleAlgoExpand(this)" tabindex="0" role="button" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleAlgoExpand(this);}">
 <div class="algo-expand-num">3</div>
-<div class="algo-expand-title-wrap">
-<div class="algo-expand-title">РОЗГЛЯНЬ ВАРІАНТИ</div>
-<div class="algo-expand-hint">Які способи можливі?</div>
-</div>
+<div class="algo-expand-title-wrap"><div class="algo-expand-title">РОЗГЛЯНЬ ВАРІАНТИ</div><div class="algo-expand-hint">Які способи можливі?</div></div>
 <div class="algo-expand-arrow">▼</div>
 </div>
-<div class="algo-expand-content">
-<div class="algo-expand-body">
-<div class="algo-expand-body-inner">
+<div class="algo-expand-content"><div class="algo-expand-body"><div class="algo-expand-body-inner">
 <div class="algo-expand-text">Які способи задоволення потреби можливі? Порівняй їх за важливими для тебе критеріями.</div>
-<div class="algo-expand-questions">
-<strong>🤔 Запитання для роздумів:</strong>
-<ul>
-<li>Які є альтернативи?</li>
-<li>Який варіант найдоступніший?</li>
-<li>Який варіант найефективніший?</li>
-</ul>
+<div class="algo-expand-questions"><strong>🤔 Запитання для роздумів:</strong><ul><li>Які є альтернативи?</li><li>Який варіант найдоступніший?</li><li>Який варіант найефективніший?</li></ul></div>
+</div></div></div>
 </div>
-</div>
-</div>
-</div>
-</div>
-
 <div class="algo-expand" data-step="4">
 <div class="algo-expand-header" onclick="toggleAlgoExpand(this)" tabindex="0" role="button" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleAlgoExpand(this);}">
 <div class="algo-expand-num">4</div>
-<div class="algo-expand-title-wrap">
-<div class="algo-expand-title">ПЕРЕДБАЧ НАСЛІДКИ</div>
-<div class="algo-expand-hint">Які плюси й мінуси кожного варіанта?</div>
-</div>
+<div class="algo-expand-title-wrap"><div class="algo-expand-title">ПЕРЕДБАЧ НАСЛІДКИ</div><div class="algo-expand-hint">Які плюси й мінуси кожного варіанта?</div></div>
 <div class="algo-expand-arrow">▼</div>
 </div>
-<div class="algo-expand-content">
-<div class="algo-expand-body">
-<div class="algo-expand-body-inner">
+<div class="algo-expand-content"><div class="algo-expand-body"><div class="algo-expand-body-inner">
 <div class="algo-expand-text">Які плюси й мінуси кожного варіанта? Який вплив він матиме на мене та інших?</div>
-<div class="algo-expand-questions">
-<strong>🤔 Запитання для роздумів:</strong>
-<ul>
-<li>Що буде, якщо я оберу цей варіант?</li>
-<li>Які можуть бути ризики?</li>
-<li>Як це вплине на мої стосунки з іншими?</li>
-</ul>
+<div class="algo-expand-questions"><strong>🤔 Запитання для роздумів:</strong><ul><li>Що буде, якщо я оберу цей варіант?</li><li>Які можуть бути ризики?</li><li>Як це вплине на мої стосунки з іншими?</li></ul></div>
+</div></div></div>
 </div>
-</div>
-</div>
-</div>
-</div>
-
 <div class="algo-expand" data-step="5">
 <div class="algo-expand-header" onclick="toggleAlgoExpand(this)" tabindex="0" role="button" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleAlgoExpand(this);}">
 <div class="algo-expand-num">5</div>
-<div class="algo-expand-title-wrap">
-<div class="algo-expand-title">ПРИЙМИ РІШЕННЯ І ДІЙ</div>
-<div class="algo-expand-hint">Обери найкращий варіант</div>
-</div>
+<div class="algo-expand-title-wrap"><div class="algo-expand-title">ПРИЙМИ РІШЕННЯ І ДІЙ</div><div class="algo-expand-hint">Обери найкращий варіант</div></div>
 <div class="algo-expand-arrow">▼</div>
 </div>
-<div class="algo-expand-content">
-<div class="algo-expand-body">
-<div class="algo-expand-body-inner">
+<div class="algo-expand-content"><div class="algo-expand-body"><div class="algo-expand-body-inner">
 <div class="algo-expand-text">Обери найкращий варіант і зроби перший крок. За потреби шукай інший шлях.</div>
-<div class="algo-expand-questions">
-<strong>🤔 Запитання для роздумів:</strong>
-<ul>
-<li>Чи готовий(а) я діяти?</li>
-<li>Який перший крок?</li>
-</ul>
+<div class="algo-expand-questions"><strong>🤔 Запитання для роздумів:</strong><ul><li>Чи готовий(а) я діяти?</li><li>Який перший крок?</li></ul></div>
+</div></div></div>
 </div>
-</div>
-</div>
-</div>
-</div>
-
 <div class="algo-expand" data-step="6">
 <div class="algo-expand-header" onclick="toggleAlgoExpand(this)" tabindex="0" role="button" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleAlgoExpand(this);}">
 <div class="algo-expand-num">6</div>
-<div class="algo-expand-title-wrap">
-<div class="algo-expand-title">ОЦІНИ РЕЗУЛЬТАТ</div>
-<div class="algo-expand-hint">Чи вдалося задовольнити потребу?</div>
-</div>
+<div class="algo-expand-title-wrap"><div class="algo-expand-title">ОЦІНИ РЕЗУЛЬТАТ</div><div class="algo-expand-hint">Чи вдалося задовольнити потребу?</div></div>
 <div class="algo-expand-arrow">▼</div>
 </div>
-<div class="algo-expand-content">
-<div class="algo-expand-body">
-<div class="algo-expand-body-inner">
+<div class="algo-expand-content"><div class="algo-expand-body"><div class="algo-expand-body-inner">
 <div class="algo-expand-text">Чи вдалося задовольнити потребу? Що я зроблю інакше наступного разу?</div>
-<div class="algo-expand-questions">
-<strong>🤔 Запитання для роздумів:</strong>
-<ul>
-<li>Чи досяг(ла) я мети?</li>
-<li>Що було успішним?</li>
-<li>Що варто змінити наступного разу?</li>
-</ul>
+<div class="algo-expand-questions"><strong>🤔 Запитання для роздумів:</strong><ul><li>Чи досяг(ла) я мети?</li><li>Що було успішним?</li><li>Що варто змінити наступного разу?</li></ul></div>
+</div></div></div>
 </div>
 </div>
-</div>
-</div>
-</div>
-</div>
-
 <div class="key-point">💡 <strong>Пам'ятай:</strong> Алгоритм працює як для великих рішень (куди вступати), так і для щоденних (як розподілити кишенькові гроші).</div>
 <div class="navigation"><button class="btn btn-secondary" onclick="goToMainPage()">← До змісту</button><button class="btn btn-primary" onclick="showS4('s4t1')">Далі: Завдання 1 →</button></div>
 </section>
@@ -877,8 +761,7 @@ body{font-family:system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;background
 <div><strong>Як виконувати:</strong><br>
 1️⃣ Натисни на крок у верхньому блоці (банк) — він підсвітиться жовтим.<br>
 2️⃣ Натисни на пронумерований слот (1–6) нижче — крок стане на своє місце.<br>
-3️⃣ Щоб повернути крок назад — натисни на нього в слоті.<br>
-4️⃣ На комп'ютері можна перетягувати мишею.</div>
+3️⃣ Щоб повернути крок назад — натисни ✕ у слоті.</div>
 </div>
 <div class="sort-container">
 <div class="sort-bank">
@@ -904,7 +787,14 @@ body{font-family:system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;background
 <div><span style="font-size:13px;color:var(--text-muted)">💸 Витрачено:</span> <span class="budget-spent" id="budgetSpent">0 грн</span></div>
 <div><span style="font-size:13px;color:var(--text-muted)">🏦 Залишок:</span> <span class="budget-remaining" id="budgetRemaining">1500 грн</span></div>
 </div>
-<p style="font-size:13px;color:#78350f;margin-bottom:12px;font-style:italic">📌 Натискай на витрати, щоб обрати їх. Зверни увагу: є потреби, є бажання, є заощадження. Спробуй збалансувати!</p>
+<div class="tap-instruction" style="margin-bottom:16px">
+<div class="tap-instruction-icon">💡</div>
+<div><strong>Критерії раціонального бюджету:</strong><br>
+✅ Покрити всі необхідні потреби (їжа, проїзд, навчання)<br>
+✅ Відкласти частину на мрію (заощадження)<br>
+✅ За можливості — дозволити собі доступне бажання<br>
+📌 <em>Правильних розподілів може бути декілька — це нормально!</em></div>
+</div>
 <div class="budget-items" id="budgetItems"></div>
 <div class="budget-feedback" id="budgetFeedback"><strong style="color:var(--primary)">💡 Порада:</strong> Обери витрати, натискаючи на картки. Потім натисни «Перевірити».</div>
 </div>
@@ -912,6 +802,7 @@ body{font-family:system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;background
 <div class="navigation"><button class="btn btn-secondary" onclick="showS4('s4t1')">← Назад</button><button class="btn btn-primary" onclick="chkBudget()">✓ Перевірити</button><button class="btn btn-success" onclick="showS4('s4t3')">Далі →</button></div>
 </section>
 
+<!-- === ВИПРАВЛЕНО: Крок 4, завдання 3 — змінено формулювання === -->
 <section class="card hidden" id="s4t3">
 <h2>📝 Завдання 3. Застосування алгоритму</h2>
 <div class="feedback feedback-warning mb-24"><strong>📌 Ситуація:</strong> Тобі потрібен новий рюкзак для школи. Старий порвався. У тебе є 800 грн, 2 вільних вечори цього тижня і друг, який може піти з тобою.</div>
@@ -922,8 +813,8 @@ body{font-family:system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;background
 <div class="situation-content-right">
 <p style="margin:12px 0;color:var(--text-muted);font-style:italic">📌 <strong>Які дії відповідають крокам алгоритму свідомого вибору?</strong></p>
 <div class="task-options" id="s4t3">
-<div class="option" data-correct="true" onclick="tog(this)" tabindex="0"><div class="option-checkbox"></div><div class="option-text"><div class="option-label">Усвідомити потребу: мені потрібен рюкзак, бо старий зіпсований</div></div></div>
-<div class="option" data-correct="true" onclick="tog(this)" tabindex="0"><div class="option-checkbox"></div><div class="option-text"><div class="option-label">Оцінити ресурси: 800 грн, 2 вечори, допомога друга</div></div></div>
+<div class="option" data-correct="true" onclick="tog(this)" tabindex="0"><div class="option-checkbox"></div><div class="option-text"><div class="option-label">Усвідомити потребу: мені потрібен новий рюкзак, бо старий порвався</div></div></div>
+<div class="option" data-correct="true" onclick="tog(this)" tabindex="0"><div class="option-checkbox"></div><div class="option-text"><div class="option-label">Оцінити ресурси: 800 грн, два вільних вечори, можливість звернутися по допомогу до друга</div></div></div>
 <div class="option" data-correct="false" onclick="tog(this)" tabindex="0"><div class="option-checkbox"></div><div class="option-text"><div class="option-label">Одразу купити найдорожчий рюкзак у першому-но трапився магазині</div></div></div>
 <div class="option" data-correct="true" onclick="tog(this)" tabindex="0"><div class="option-checkbox"></div><div class="option-text"><div class="option-label">Розглянути варіанти: онлайн, у ТЦ, на ринку — порівняти ціни</div></div></div>
 <div class="option" data-correct="true" onclick="tog(this)" tabindex="0"><div class="option-checkbox"></div><div class="option-text"><div class="option-label">Передбачити наслідки: чи вистачить грошей, чи підійде за розміром</div></div></div>
@@ -934,7 +825,6 @@ body{font-family:system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;background
 </section>
 </main>
 
-<!-- КРОК 5 -->
 <main class="container hidden" id="step5Page">
 <div class="step-header"><div class="step-header-top"><h2 class="step-title">⚖️ Крок 5. Потреби чи бажання?</h2><span class="step-badge">2 завдання</span></div></div>
 <section class="card" id="s5Theory">
@@ -968,7 +858,7 @@ body{font-family:system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;background
 <ul style="margin-top:8px;padding-left:20px;font-size:14px">
 <li>🎮 Нова гра чи гаджет</li>
 <li>👟 Брендове взуття</li>
-<li>🍭 Солодощі понад міру</li>
+<li>🍭 Улюблені солодощі</li>
 <li>🎬 Похід у кіно з друзями</li>
 </ul>
 </div>
@@ -992,11 +882,12 @@ body{font-family:system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;background
 <div class="navigation"><button class="btn btn-secondary" onclick="goToMainPage()">← До змісту</button><button class="btn btn-primary" onclick="showS5('s5t1')">Далі: Завдання 1 →</button></div>
 </section>
 
+<!-- === ВИПРАВЛЕНО: classifyData — замінено тексти === -->
 <section class="card hidden" id="s5t1">
 <h2>🎯 Завдання 1. Потреба чи бажання?</h2>
 <div class="tap-instruction">
 <div class="tap-instruction-icon">👆</div>
-<div><strong>Як виконувати:</strong> Натисни на твердження → воно підсвітиться жовтим. Потім натисни на потрібну колонку (ПОТРЕБА або БАЖАННЯ). На комп'ютері можна перетягувати мишею.</div>
+<div><strong>Як виконувати:</strong> Натисни на твердження → воно підсвітиться жовтим. Потім натисни на потрібну колонку (ПОТРЕБА або БАЖАННЯ).</div>
 </div>
 <div class="classify-grid">
 <div class="classify-col need" id="needCol" data-category="need" onclick="classifyTapTarget(this)">
@@ -1017,9 +908,10 @@ body{font-family:system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;background
 <div class="navigation"><button class="btn btn-secondary" onclick="showS5('s5Theory')">← Назад</button><button class="btn btn-primary" onclick="chkClassify()">✓ Перевірити</button><button class="btn btn-success" onclick="showS5('s5t2')">Далі →</button></div>
 </section>
 
+<!-- === ВИПРАВЛЕНО: Крок 5, завдання 2 — переписано ситуацію та варіанти === -->
 <section class="card hidden" id="s5t2">
 <h2>📝 Завдання 2. Аналіз ситуації: Марія і мрія</h2>
-<div class="feedback feedback-warning mb-24"><strong>📌 Ситуація:</strong> Марія мріє про новий велосипед (коштує 8000 грн). Щомісяця вона отримує 1000 грн кишенькових. Побачила в магазині модні кросівки за 3000 грн — дуже хоче їх. Також у неї з'явився біль у зубі — треба до стоматолога (1500 грн).</div>
+<div class="feedback feedback-warning mb-24"><strong>📌 Ситуація:</strong> Марія мріє про новий велосипед вартістю 8000 грн. Щомісяця вона отримує 1000 грн кишенькових грошей. Нещодавно Марія побачила в магазині модні кросівки за 3000 грн і дуже захотіла їх придбати. Водночас у неї заболів зуб, а лікування коштує 1500 грн.</div>
 <div class="situation-layout">
 <div class="situation-illustration-left">
 <img src="https://res.cloudinary.com/dmydvhkzr/image/upload/v1792865046/28-5_zfkajy.png" alt="Марія робить вибір" class="situation-img" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 300 200%22><rect fill=%22%23fce7f3%22 width=%22300%22 height=%22200%22/><text x=%22150%22 y=%22100%22 text-anchor=%22middle%22 font-size=%2250%22>🚴🦷</text></svg>'">
@@ -1027,11 +919,11 @@ body{font-family:system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;background
 <div class="situation-content-right">
 <p style="margin:12px 0;color:var(--text-muted);font-style:italic">📌 <strong>Які висновки є правильними?</strong></p>
 <div class="task-options" id="s5t2">
-<div class="option" data-correct="true" onclick="tog(this)" tabindex="0"><div class="option-checkbox"></div><div class="option-text"><div class="option-label">🦷 Стоматолог — це потреба (здоров'я), її треба задовольнити першою</div></div></div>
+<div class="option" data-correct="true" onclick="tog(this)" tabindex="0"><div class="option-checkbox"></div><div class="option-text"><div class="option-label">🦷 Лікування зуба — нагальна потреба, тому його слід поставити на перше місце</div></div></div>
 <div class="option" data-correct="true" onclick="tog(this)" tabindex="0"><div class="option-checkbox"></div><div class="option-text"><div class="option-label">👟 Кросівки — бажання; їх можна відкласти або шукати дешевші</div></div></div>
 <div class="option" data-correct="false" onclick="tog(this)" tabindex="0"><div class="option-checkbox"></div><div class="option-text"><div class="option-label">😐 Треба одразу купити кросівки, бо вони модні</div></div></div>
 <div class="option" data-correct="true" onclick="tog(this)" tabindex="0"><div class="option-checkbox"></div><div class="option-text"><div class="option-label">🚴 Велосипед — мрія (бажання); для неї варто відкладати гроші поступово</div></div></div>
-<div class="option" data-correct="true" onclick="tog(this)" tabindex="0"><div class="option-checkbox"></div><div class="option-text"><div class="option-label">🧠 Свідомий вибір — спочатку здоров'я, потім накопичення на мрію</div></div></div>
+<div class="option" data-correct="true" onclick="tog(this)" tabindex="0"><div class="option-checkbox"></div><div class="option-text"><div class="option-label">🧠 Свідомий вибір — подбати про здоров'я, а решту грошей заощаджувати на велосипед</div></div></div>
 </div>
 </div></div>
 <div id="s5t2f" class="feedback" style="display:none"></div>
@@ -1039,7 +931,6 @@ body{font-family:system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;background
 </section>
 </main>
 
-<!-- КРОК 6 -->
 <main class="container hidden" id="step6Page">
 <div class="step6-header"><h2>🎉 Вітаємо! Ти завершив(ла) параграф!</h2><p>Час дізнатися свій рівень</p></div>
 <div class="card"><h2>⭐ Оціни свої вміння</h2>
@@ -1061,7 +952,6 @@ body{font-family:system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;background
 <div class="navigation"><button class="btn btn-warning" onclick="resetProgress()">🔄 Пройти ще раз</button><button class="btn btn-primary" onclick="goToMainPage()">🏠 На головну</button></div>
 </main>
 
-<!-- MODALS -->
 <div class="modal-overlay" id="progressModal" role="dialog" aria-modal="true" aria-labelledby="pTitle">
 <div class="modal"><div class="modal-header"><h2 id="pTitle">📊 Мій прогрес</h2><button class="modal-close" onclick="closeModal('progressModal')">✕</button></div>
 <div class="text-center"><div style="font-size:48px;margin-bottom:16px" id="mEmoji">⭐☆☆☆☆</div><h3 style="color:var(--primary);margin-bottom:24px" id="mName">Початківець</h3>
@@ -1096,8 +986,6 @@ var SC = {1:0, 2:0, 3:0, 4:0, 5:0};
 var PT = {c:0, t:TOTAL_TASKS, a:[]};
 var state = {cs:0, sr:[0,0,0,0,0]};
 var tfCompleted = {};
-
-// === TAP-TO-TAP ===
 var tapState = {selectedItem: null};
 
 function addC(id) {
@@ -1157,7 +1045,7 @@ wb.appendChild(dot);
 }
 function saveP() {
 try {
-sessionStorage.setItem("s28v6", JSON.stringify({
+sessionStorage.setItem("s28v8", JSON.stringify({
 PT: {c: PT.c, t: TOTAL_TASKS, a: PT.a},
 ST: ST, SC: SC, state: state
 }));
@@ -1165,7 +1053,7 @@ ST: ST, SC: SC, state: state
 }
 function loadP() {
 try {
-var s = localStorage.getItem("s28v6");
+var s = localStorage.getItem("s28v8");
 if (s) {
 var d = JSON.parse(s);
 if (d.PT) { PT.c = d.PT.c || 0; PT.a = d.PT.a || []; }
@@ -1299,7 +1187,6 @@ if (id === "s5t1") initClassify();
 window.scrollTo({top: 0, behavior: "smooth"});
 }
 
-// === РЕСУРСИ ===
 var resourceData = {
 natural: {title: "🌿 Природні ресурси",desc: "Те, що дає нам природа.",items: ["💧 Вода", "🌬️ Повітря", "🍎 Продукти харчування", "☀️ Енергія сонця", "🌳 Ліси", "⛏️ Корисні копалини"]},
 material: {title: "🏭 Матеріальні ресурси",desc: "Предмети, техніка, обладнання.",items: ["🍳 Кухонне обладнання", "🍽️ Посуд", "🛒 Продукти", "📱 Гаджети", "🔌 Електроприлади", "🏠 Будинки"]},
@@ -1320,16 +1207,13 @@ var activeCircle = document.querySelector(".rc-" + type);
 if (activeCircle) activeCircle.classList.add("active");
 }
 
-// === НОВА ФУНКЦІЯ: РОЗКРИТТЯ КАРТОК АЛГОРИТМУ ===
 function toggleAlgoExpand(headerEl) {
 var item = headerEl.parentElement;
 var wasActive = item.classList.contains("active");
-// Закриваємо всі картки алгоритму (режим акордеону — відкрита лише одна)
 var allItems = document.querySelectorAll(".algo-expand");
 for (var i = 0; i < allItems.length; i++) allItems[i].classList.remove("active");
 if (!wasActive) {
 item.classList.add("active");
-// Прокрутка до картки на мобільному
 setTimeout(function() {
 if (window.innerWidth <= 768) {
 var rect = item.getBoundingClientRect();
@@ -1341,17 +1225,18 @@ item.scrollIntoView({behavior: "smooth", block: "start"});
 }
 }
 
-// === БЮДЖЕТ ===
+// === БЮДЖЕТ (множинні правильні варіанти) ===
 var budgetData = [
-{id:1, name:"🍞 Продукти на тиждень", price:500, type:"need"},
-{id:2, name:"🚌 Проїзд до школи", price:200, type:"need"},
-{id:3, name:"📚 Канцтовари для школи", price:150, type:"need"},
-{id:4, name:"📱 Поповнення телефону", price:150, type:"need"},
-{id:5, name:"🎮 Нова гра в Steam", price:400, type:"want"},
-{id:6, name:"🍕 Піца з друзями", price:300, type:"want"},
-{id:7, name:"👟 Брендові кросівки", price:2500, type:"want"},
-{id:8, name:"🏦 Відкласти на мрію", price:300, type:"save"}
+{id:1, name:"🍞 Продукти на тиждень", price:500, type:"need", must:true},
+{id:2, name:"🚌 Проїзд до школи", price:200, type:"need", must:true},
+{id:3, name:"📚 Канцтовари для школи", price:150, type:"need", must:true},
+{id:4, name:"📱 Поповнення телефону", price:150, type:"need", must:false},
+{id:5, name:"🎮 Нова гра в Steam", price:400, type:"want", must:false},
+{id:6, name:"🍕 Піца з друзями", price:150, type:"want", must:false},
+{id:7, name:"👟 Брендові кросівки", price:2500, type:"want", must:false},
+{id:8, name:"🏦 Відкласти на мрію", price:300, type:"save", must:false}
 ];
+var BUDGET_LIMIT = 1500;
 var budgetSelected = [];
 function initBudget() {
 var container = document.getElementById("budgetItems");
@@ -1365,7 +1250,8 @@ div.className = "budget-item";
 div.dataset.id = item.id;
 div.dataset.type = item.type;
 div.dataset.price = item.price;
-var typeLabel = item.type === "need" ? "🟢 Потреба" : (item.type === "want" ? "🟡 Бажання" : "🔵 Заощадження");
+div.dataset.must = item.must;
+var typeLabel = item.type === "need" ? "🟢 Потреба" + (item.must ? " (обов'язкова)" : "") : (item.type === "want" ? "🟡 Бажання" : "🔵 Заощадження");
 div.innerHTML = '<div class="budget-item-name">' + item.name + '</div><div class="budget-item-price">' + item.price + ' грн</div><div class="budget-item-type">' + typeLabel + '</div>';
 div.onclick = function() { toggleBudgetItem(this); };
 container.appendChild(div);
@@ -1385,19 +1271,19 @@ if (el.classList.contains("selected")) {
 el.classList.remove("selected");
 budgetSelected = budgetSelected.filter(function(x) { return x.id !== id; });
 } else {
-if (currentSpent + price > 1500) {
-showToast("Не вистачить грошей!", "⚠️");
+if (currentSpent + price > BUDGET_LIMIT) {
+showToast("Перевищення бюджету! (" + (currentSpent + price) + " > " + BUDGET_LIMIT + " грн)", "⚠️");
 return;
 }
 el.classList.add("selected");
-budgetSelected.push({id:id, price:price, type:el.dataset.type});
+budgetSelected.push({id:id, price:price, type:el.dataset.type, must:el.dataset.must === "true"});
 }
 updateBudgetDisplay();
 }
 function updateBudgetDisplay() {
 var spent = 0;
 for (var i = 0; i < budgetSelected.length; i++) spent += budgetSelected[i].price;
-var remaining = 1500 - spent;
+var remaining = BUDGET_LIMIT - spent;
 document.getElementById("budgetSpent").textContent = spent + " грн";
 document.getElementById("budgetRemaining").textContent = remaining + " грн";
 }
@@ -1411,25 +1297,57 @@ f.className = "feedback feedback-warning";
 f.innerHTML = "⚠️ Обери хоча б одну витрату.";
 return;
 }
-var hasNeeds = false, hasSavings = false;
-var needsCount = 0, wantsCount = 0, savesCount = 0;
-for (var i = 0; i < budgetSelected.length; i++) {
-if (budgetSelected[i].type === "need") { hasNeeds = true; needsCount++; }
-if (budgetSelected[i].type === "want") wantsCount++;
-if (budgetSelected[i].type === "save") { hasSavings = true; savesCount++; }
+var spent = 0;
+for (var i = 0; i < budgetSelected.length; i++) spent += budgetSelected[i].price;
+if (spent > BUDGET_LIMIT) {
+f.className = "feedback feedback-error";
+f.innerHTML = "<strong>❌ Перевищення бюджету!</strong> Ти витратив(ла) " + spent + " грн, а доступно лише " + BUDGET_LIMIT + " грн.";
+return;
 }
-var ok = hasNeeds && hasSavings;
-if (ok) {
+var allMustNeedsCovered = true;
+var missedMustNeeds = [];
+for (var j = 0; j < budgetData.length; j++) {
+if (budgetData[j].must) {
+var found = false;
+for (var k = 0; k < budgetSelected.length; k++) {
+if (budgetSelected[k].id === budgetData[j].id) { found = true; break; }
+}
+if (!found) {
+allMustNeedsCovered = false;
+missedMustNeeds.push(budgetData[j].name);
+}
+}
+}
+var hasSavings = false;
+var savesCount = 0;
+for (var m = 0; m < budgetSelected.length; m++) {
+if (budgetSelected[m].type === "save") { hasSavings = true; savesCount++; }
+}
+var wantsCount = 0;
+for (var n = 0; n < budgetSelected.length; n++) {
+if (budgetSelected[n].type === "want") wantsCount++;
+}
+if (allMustNeedsCovered && hasSavings) {
 f.className = "feedback feedback-success";
-f.innerHTML = "<strong>✅ Чудово!</strong> Ти збалансував(ла) бюджет: є потреби і заощадження. Це свідомий вибір!";
-fb.innerHTML = '<strong style="color:var(--success)">🎉 Чудово!</strong> Ти обрав(ла) ' + needsCount + ' потреб' + (wantsCount > 0 ? ', ' + wantsCount + ' бажань' : '') + ' та ' + savesCount + ' заощадження. Раціональний підхід!';
+var msg = "<strong>✅ Чудово! Раціональний бюджет!</strong><br>";
+msg += "Ти покрив(ла) всі необхідні потреби, відклав(ла) кошти на мрію";
+if (wantsCount > 0) {
+msg += " і дозволив(ла) собі " + wantsCount + " доступн" + (wantsCount === 1 ? "е бажання" : "их бажання");
+}
+msg += ". Це свідомий вибір!";
+f.innerHTML = msg;
+fb.innerHTML = '<strong style="color:var(--success)">🎉 Раціональний підхід!</strong> Витрачено: ' + spent + ' грн, залишок: ' + (BUDGET_LIMIT - spent) + ' грн.';
 addC("step4_task2");
 showToast("Завдання виконано!", "🎉");
+} else if (allMustNeedsCovered && !hasSavings) {
+f.className = "feedback feedback-warning";
+f.innerHTML = "<strong>💡 Майже правильно!</strong> Ти покрив(ла) всі необхідні потреби, але не відклав(ла) кошти на мрію. Свідомий вибір передбачає заощадження хоча б частини ресурсів. Спробуй додати «Відкласти на мрію».";
+} else if (!allMustNeedsCovered && hasSavings) {
+f.className = "feedback feedback-warning";
+f.innerHTML = "<strong>💡 Зверни увагу!</strong> Ти відклав(ла) кошти на мрію — це добре. Але не покриті всі необхідні потреби: <em>" + missedMustNeeds.join(", ") + "</em>. Спочатку — потреби, потім — бажання та заощадження.";
 } else {
 f.className = "feedback feedback-error";
-f.innerHTML = "<strong>❌ Не зовсім.</strong> Спробуй ще раз.";
-if (!hasNeeds) fb.innerHTML = '<strong style="color:var(--danger)">⚠️</strong> Ти не обрав(ла) жодної потреби.';
-else if (!hasSavings) fb.innerHTML = '<strong style="color:var(--danger)">⚠️</strong> Ти не відклав(ла) грошей на мрію.';
+f.innerHTML = "<strong>❌ Потрібно переглянути бюджет.</strong><br>Не покриті необхідні потреби: <em>" + missedMustNeeds.join(", ") + "</em>. Також варто відкласти частину коштів на мрію.";
 }
 }
 
@@ -1708,14 +1626,14 @@ addC("step4_task1");
 showToast("Завдання виконано!", "🎉");
 } else {
 f.className = "feedback feedback-error";
-f.innerHTML = "<strong>❌ Не зовсім.</strong> Зеленим — правильна позиція, червоним — потрібно переставити. Натисни на червоний слот, щоб повернути крок у банк.";
+f.innerHTML = "<strong>❌ Не зовсім.</strong> Зеленим — правильна позиція, червоним — потрібно переставити. Натисни ✕ у слоті, щоб повернути крок у банк.";
 setTimeout(function() {
 for (var k = 0; k < slotEls.length; k++) slotEls[k].classList.remove("correct-pos","incorrect-pos");
 }, 4000);
 }
 }
 
-// === ПІКНІК ===
+// === ВИПРАВЛЕНО: picnicData — "Яблука та бутерброди" → nat, "Сонячне світло" → nat ===
 var picnicData = [
 {text:"💧 Мінеральна вода", type:"nat"},
 {text:"🍎 Яблука та бутерброди", type:"nat"},
@@ -1724,7 +1642,7 @@ var picnicData = [
 {text:"🎵 Уміння грати на гітарі", type:"hum"},
 {text:"🤝 Організаторські здібності", type:"hum"},
 {text:"💳 Гроші на продукти", type:"fin"},
-{text:"☀️ Сонячна погода", type:"nat"}
+{text:"☀️ Сонячне світло", type:"nat"}
 ];
 var picnicState = {selectedCard: null};
 function initPicnic() {
@@ -1759,7 +1677,7 @@ if (f) f.style.display = "none";
 }
 function selectPicnicCard(el) {
 var parent = el.parentElement;
-if (parent && parent.id !== "picnicBank") {
+if (parent && parent.id !== "picnicBank" && parent.dataset && parent.dataset.category) {
 document.getElementById("picnicBank").appendChild(el);
 el.classList.remove("selected");
 picnicState.selectedCard = null;
@@ -1817,7 +1735,7 @@ addC("step2_task2");
 showToast("Завдання виконано!", "🎉");
 } else {
 f.className = "feedback feedback-error";
-f.innerHTML = "<strong>❌ Не зовсім правильно.</strong> Червоним — помилка. Натисни на картку, щоб повернути її в банк, і спробуй ще раз.";
+f.innerHTML = "<strong>❌ Не зовсім правильно.</strong> Червоним — помилка. Натисни на картку в цільовій зоні, щоб повернути її в банк, і спробуй ще раз.";
 setTimeout(function() {
 var all = document.querySelectorAll(".dnd-card");
 for (var k = 0; k < all.length; k++) all[k].classList.remove("correct","incorrect");
@@ -1825,16 +1743,16 @@ for (var k = 0; k < all.length; k++) all[k].classList.remove("correct","incorrec
 }
 }
 
-// === КЛАСИФІКАЦІЯ ===
+// === ВИПРАВЛЕНО: classifyData — замінено тексти ===
 var classifyData = [
 {text:"💧 Питна вода", type:"need"},
-{text:"🍎 Їжа для здорового розвитку", type:"need"},
+{text:"🍎 Повноцінне харчування", type:"need"},
 {text:"🏠 Тепле житло", type:"need"},
 {text:"📚 Освіта та навчання", type:"need"},
-{text:"🩺 Лікування у лікаря", type:"need"},
+{text:"🩺 Медична допомога", type:"need"},
 {text:"🎮 Нова відеогра", type:"want"},
 {text:"👟 Брендові кросівки", type:"want"},
-{text:"🍭 Солодощі понад міру", type:"want"},
+{text:"🍭 Улюблені солодощі", type:"want"},
 {text:"📱 Остання модель телефону", type:"want"},
 {text:"🎬 Похід у кіно з друзями", type:"want"}
 ];
@@ -1945,7 +1863,7 @@ else stars[i].classList.remove("active");
 }
 function resetProgress() {
 if (confirm("Почати спочатку? Весь прогрес буде скинуто.")) {
-localStorage.removeItem("s28v6");
+localStorage.removeItem("s28v8");
 location.reload();
 }
 }
